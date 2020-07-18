@@ -1,70 +1,113 @@
-/*База*/
+/* База */
 body {
-	background: url(background.png);
-	font-family: monospace;
-	font-size: 30px;
-	font-style: monospace;
+	background: black;
+	font-family: 'Helvetica', 'Arial', sans-serif;
 	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	color: white;
+	font-size: 30px;
+	border: solid white 1px;
 }
 html{overflow-x:  hidden;}
-
-
-/*Текст*/
-h1{
-	color: white;
-	font-size: 80px;
-}
-h2{color: white}
-h3{
-	color: white;
- 	text-align: left
-}
-h4{color: white}
-p{
-	color: white;
-	text-align: left;
-}
-a{
-	text-decoration: none;
-	text-align: center
+hr {
+	height: 5px;
+	background-color: white;
+	margin-bottom: 100px;
 }
 
-/*Кнопка скачивания*/
-.Download{
-	outline: none;
-	display: inline-block;
+.header {
+	display: flex;
+	background-color: white;
+	height: 100vh;
+	margin-bottom: 50px;
+}
+.header-title {
+	font-size: 120px;
+	margin: auto;
 	color: black;
-	padding: 20px 30px;
-	margin: 10px 10px;
-	border-radius: 50px;
-	font-size: 60pt;
-	font-family: monospace;
-	text-transform: uppercase;
-	background-image: linear-gradient(to left, white 51%, white 51%, white 51%);
-	background-size: 200% auto;
-	box-shadow: 0 0 20px rgba(0,0,0,.1);
-	transition: .5s;
 }
-.youTubeLnk{
-	outline: none;
-	display: inline-block;
+
+.footer {
+	padding: 6px;
+	background-color: rgba(255, 255, 255, .9);
+	height: 26vh;
 	color: black;
-	padding: 20px 40px;
-	margin: 10px 10px;
-	border-radius: 10px;
-	font-family: monospace;
-	text-transform: uppercase;
-	font-size: 50px;
-	background-image: linear-gradient(to left, white 51%, white 51%, white 51%);
-	background-size: 100% auto;
-	box-shadow: 0 0 20px rgba(0,0,0,.1);
-	transition: .5s;
-}
-.youTube{
+	font-size: 20px;
 	text-align: center;
-	font-size: 50px
 }
-#newProject{
-	text-decoration: underline;
-	color: yellow
+
+/* Объекты */
+
+	/* Загрузки */
+.downloads{
+	border: solid white 5px;
+}
+
+.download-page {
+	height: 150px;
+	width: 500px;
+	margin: auto;
+	margin-bottom: 30px;
+	display: flex;
+	border: solid white 3px;
+	cursor: pointer;
+	transition: opacity 0.2s;
+	transition: width 0.2s;
+	box-shadow: 10px 10px 5px white;
+}
+
+.download-page:hover{
+	opacity: 0.6;
+	width: 450px;
+}
+
+.download-page-text {
+	font-size: 70px;
+	color: white;
+	margin: auto;
+}
+
+
+	/* Обновления */
+.updates {
+	border: solid white 5px;
+}
+
+.title {
+	font-size: 50px;
+	margin-bottom: 150px;
+	margin-top: 350px
+}
+
+.updates-list {
+	margin-bottom: 200px;
+	transition: width 0.2s;
+	width: 70%;
+	border: solid white 3px;
+	margin: auto;
+	margin-bottom: 100px;
+	box-shadow: 7px 7px 2px white;
+}
+
+.updates-list:hover {
+	width: 80%;
+}
+
+
+	/* Скриншоты */
+.screenshots {
+	border: solid white 5px;
+}
+
+.screenshot {
+	width: 300px;
+	border: solid white 5px;
+	transition: width 0.7s;
+	margin: 30px;
+	box-shadow: 7px 7px 2px white;
+}
+
+.screenshot:hover {
+	width: 400px;
 }
